@@ -16,7 +16,8 @@ function onClickList(evt) {
 
   onClickLinkElementGalleryPreventDefault(evt);
 
-  window.addEventListener('keydown', onEscKayPress, { once: true });
+  window.addEventListener('keydown', onEscKayPress);
+  // window.addEventListener('keydown', onEscKayPress, { once: true });
 
   function onEscKayPress(evt) {
     if (evt.code !== 'Escape') {
